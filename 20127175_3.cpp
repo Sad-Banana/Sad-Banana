@@ -2,15 +2,9 @@
 #include <math.h>
 #include <iomanip>
 using namespace std;
-int main()
+void ex3(float a,float b,float c)
 {
-    float a, b, c, x1, x2, x3, x4, x5, x6, delta;   
-    cout << "Nhap a = ";
-    cin >> a;
-    cout << "Nhap b = ";
-    cin >> b;
-    cout << "Nhap c = ";
-    cin >> c;
+    float x1, x2, x3, x4, x5, x6, delta;
     if (a == 0)
     {
         if (b == 0)
@@ -57,6 +51,17 @@ int main()
         cout << " va 2 nghiem = " << x5 << " voi " << x6 << endl;
     }
     }
+}
+int main()
+{
+    float a, b, c, x1, x2, x3, x4, x5, x6, delta;   
+    cout << "Nhap a = ";
+    cin >> a;
+    cout << "Nhap b = ";
+    cin >> b;
+    cout << "Nhap c = ";
+    cin >> c;
+    ex3(a,b,c);
     system ("pause");
     return 0;
 }
